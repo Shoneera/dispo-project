@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './dispo-main.component.css'
 })
 export class DispoMainComponent {
+  lotTriggered: boolean = false;
 
+  triggerLot() {
+    this.lotTriggered = true;
+  }
 }

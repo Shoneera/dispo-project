@@ -5,11 +5,16 @@
         </header>
 
         <button class="lot-status">Lot Status</button>
-        <button class="trigger-lot">Trigger Lot</button>
+        <button class="trigger-lot" (click)="triggerLot()">Trigger Lot</button>
     </div>
 
     <div class="main-container">
-            <input type="text" placeholder="Enter LotID" class="search-bar">
-            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Enter LotID" class="search-bar">
+        <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        <div *ngIf="lotTriggered">
+            <!-- Render your content here when "Trigger Lot" button is clicked -->
+            <h2>Lot Triggered</h2>
+            <p>Details about the lot...</p>
+        </div>
     </div>
 </div>
