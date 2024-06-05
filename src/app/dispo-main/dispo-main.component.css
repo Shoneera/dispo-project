@@ -9,12 +9,18 @@
     background-color: #e6effb; /* Matching the light blue background in your design */
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
 
 .header {
     display: flex;
-    align-items: flex-start;
-    text-align: left;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text inside the header */
+    width: 100%;
     font-family: 'Franklin Gothic Medium', sans-serif;
     font-weight: bold;
 }
@@ -34,7 +40,8 @@ button {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /* Center the text horizontally */
+    text-align: center; /* Center the text inside the button */
 }
 
 button.lot-status {
@@ -48,10 +55,11 @@ button.trigger-lot {
 }
 
 .main-container {
-    width: 1000px;
+    width: 80%;
     padding: 20px;
     background-color: #ffffff; /* White background */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     border-radius: 8px; /* Rounded corners */
