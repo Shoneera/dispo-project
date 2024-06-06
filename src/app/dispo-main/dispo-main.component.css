@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: row;
     height: 100vh; /* Ensures the container takes the full viewport height */
-}
-
-.head-side {
+  }
+  
+  .head-side {
     width: 20%;
     background-color: #e6effb; /* Matching the light blue background in your design */
     padding: 20px;
@@ -12,9 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
-}
-
-.header {
+  }
+  
+  .header {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
@@ -23,15 +23,15 @@
     width: 100%;
     font-family: 'Franklin Gothic Medium', sans-serif;
     font-weight: bold;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     margin: 0;
     font-size: 24px;
     margin-bottom: 30px;
-}
-
-button {
+  }
+  
+  button {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -42,19 +42,24 @@ button {
     align-items: center;
     justify-content: center; /* Center the text horizontally */
     text-align: center; /* Center the text inside the button */
-}
-
-button.lot-status {
+  }
+  
+  button.lot-status {
     background-color: #365486;
     color: white;
-}
-
-button.trigger-lot {
+  }
+  
+  button.trigger-lot {
     background-color: #eef5ff;
     color: black;
-}
-
-.main-container {
+  }
+  
+  button.active {
+    background-color: #365486 !important;
+    color: white !important;
+  }
+  
+  .main-container {
     width: 80%;
     padding: 20px;
     background-color: #ffffff; /* White background */
@@ -65,17 +70,17 @@ button.trigger-lot {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
     margin: 20px; /* Adding some margin around the container */
-}
-
-.search-bar {
+  }
+  
+  .search-bar {
     padding: 10px;
     width: 70%;
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.search-button {
+  }
+  
+  .search-button {
     padding: 10px;
     background-color: #365486;
     color: white;
@@ -86,9 +91,10 @@ button.trigger-lot {
     align-items: center;
     justify-content: center; /* Center the text horizontally */
     text-align: center; /* Center the text inside the button */
-}
-
-.results {
+  }
+  
+  .results {
     width: 100%;
     margin-top: 20px;
-}
+  }
+  
